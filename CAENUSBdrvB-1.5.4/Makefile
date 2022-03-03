@@ -29,7 +29,8 @@ obj-m	:= CAENUSBdrvB.o
 
 else
 
-KERNELDIR ?= /lib/modules/$(shell uname -r)/build
+#KERNELDIR ?= /lib/modules/$(shell uname -r)/build
+KERNELDIR ?= /usr/src/linux-headers-3.8.7
 PWD       := $(shell pwd)
 
 default:
